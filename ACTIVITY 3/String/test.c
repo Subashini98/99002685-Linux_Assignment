@@ -4,7 +4,7 @@
 int main()
  {
  int length; 
-char p[100] = "programming ", q[100] = "is awesome";
+char p[100] = "Hello ", q[100] = "World";
 mystrcat(p, q);
 printf("String obtained on concatenation: \"%s\"\n", p);
 
