@@ -1,7 +1,7 @@
 .PHONY:clean build run
 # Output
 BUILD = build
-NAME = test
+NAME = test.out
 
 INC=Iinc
 
@@ -10,13 +10,12 @@ src/myutils.c\
 src/bitmask.c\
 src/test.c
 all: $(SRC) $(BUILD)
-        gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out -lm
+        gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT) 
 build1:
-        gcc $(SRC) $(INC) -o $(NAME).out 
+        gcc $(SRC) $(INC) -o $(NAME) 
 run:
-        ./$(NAME).out
+        ./$(NAME)
 clean:
         rm*.out
 $(BUILD):
         mkdir build
-        
