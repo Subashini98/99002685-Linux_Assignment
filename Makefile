@@ -3,12 +3,12 @@
 BUILD = build
 NAME = test
 
-INC=IINC
+INC=Iinc
 
-SRC=SRC/mystring.c\
-SRC/myutils.c\
-SRC/bitmask.c\
-SRC/test.c\
+SRC=src/mystring.c\
+src/myutils.c\
+src/bitmask.c\
+src/test.c\
 all: $(SRC) $(BUILD)
         gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out -lm
 build1:
