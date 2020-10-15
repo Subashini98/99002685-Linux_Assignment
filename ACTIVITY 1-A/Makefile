@@ -1,22 +1,16 @@
-SRC = src/mystring.c\
-src/myutils.c\
-src/bitmask.c\
-src/test.c
-
-
-
-INC = -Iinclude\
-
-PROJECT_NAME = all.out
-
-${PROJECT_NAME}: ${SRC}
-	gcc ${SRC} ${INC} -o ${PROJECT_NAME}
-
-all: ${SRC} ${BUILD}
-	gcc ${SRC} ${INC} -o ${PROJECT_NAME}
-
-run:${PROJECT_NAME}
-	./${PROJECT_NAME}
-
+target: all out clean
+all:bitmask.o mystring.o myutils.o test.o
+	gcc bitmask.c mystring.c myutils.c test.c -o all.out
+bitmask.o:
+	gcc -c bitmask.c
+mystring.o:
+	gcc -c mystring.c
+myutils.o:	
+	gcc -c myutils.c
+test.o:
+	gcc -c test.c
 clean:
-	rm -rf ${PROJECT_NAME}
+	rm -rf *.o *.out
+out:
+	./all.out
+	
