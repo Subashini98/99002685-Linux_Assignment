@@ -10,7 +10,7 @@ src/myutils.c\
 src/bitmask.c\
 src/test.c
 all: $(SRC) $(BUILD)
-        gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT) 
+        gcc $(SRC) $(INC) -o $(NAME) 
 build1:
         gcc $(SRC) $(INC) -o $(NAME) 
 run:
