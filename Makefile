@@ -1,5 +1,5 @@
 .PHONY:clean build run
-# Output directory
+# Output
 BUILD = build
 NAME = test
 
