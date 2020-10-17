@@ -18,13 +18,13 @@ jobs:
       run: sudo apt-get install -y libmath-libm-perl
   
     - name: make Activity 1
-      run:  make ACTIVITY 1-A
+      run:  make -C ACTIVITY 1-A
       
     - name: make Activity 2
-      run:  make ACTIVITY 1-B
+      run:  make -C ACTIVITY 1-B
     
     - name: make Activity 3
-      run:  make ACTIVITY 2
+      run:  make -C ACTIVITY 2
   
     - name: make Activity 4
-      run:  make ACTIVITY 3
+      run:  make -C ACTIVITY 3
