@@ -14,9 +14,9 @@ int num2=78;
 
 
     printf("***************BITMASK.H******************************\n");
-    printf("%d with %d-th bit Set: %d\n",n, k, set(n, k));
-    printf("%d with %d-th bit Reset: %d\n",n, k, reset(n, k));
-    printf("%d with %d-th bit Toggled: %d\n",n, k, flip(n, k));
+    printf("%d with %d-th bit Set: %d\n",n, k, setBit(n, k));
+    printf("%d with %d-th bit Reset: %d\n",n, k, resetBit(n, k));
+    printf("%d with %d-th bit Toggled: %d\n",n, k, flipBit(n, k));
            
            
 printf("********************MY_UTILS.H*****************************\n");
