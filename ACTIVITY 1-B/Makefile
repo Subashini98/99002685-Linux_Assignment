@@ -1,16 +1,16 @@
 .PHONY:clean build run
 NAME= test
 
-INC = -Iinclude
+INCLUDE = -IINC
 
-SRC = src/mystring.c\
-src/myutils.c\
-src/bitmask.c\
-src/test.c
+SOURCE = SRC/mystring.c\
+SRC/myutils.c\
+SRC/bitmask.c\
+SRC/test.c
 
 build:
-	gcc $(SRC) $(INC) -o $(NAME).out
+	gcc $(SOURCE) $(INCLUDE) -o $(NAME).out
 run:
 	./$(NAME).out
 clean:
-	rm*.out
+	rm *.out
