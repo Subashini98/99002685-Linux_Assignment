@@ -1,21 +1,23 @@
 .PHONY:clean build run
-# Output
+# Output directory
 BUILD = build
-NAME = test.out
+NAME= test
 
-INC=Iinc
+INC=-Iinc
 
-SRC=src/mystring.c\
+SRC= src/mystring.c\
 src/myutils.c\
 src/bitmask.c\
 src/test.c
 all: $(SRC) $(BUILD)
-        gcc $(SRC) $(INC) -o $(NAME) 
+	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out -lm
 build1:
-        gcc $(SRC) $(INC) -o $(NAME) 
+	gcc $(SRC) $(INC) -o $(NAME).out
+	
+
 run:
-        ./$(NAME)
+	./$(NAME).out
 clean:
-        rm*.out
+	rm*.out
 $(BUILD):
-        mkdir build
+	mkdir build
