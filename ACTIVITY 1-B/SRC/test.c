@@ -37,7 +37,7 @@ if(prime==1)
 else
 	printf("%d is not Prime\n",num2); 
 
-printf("********************MY_STRING.H*****************************\n"); 
+printf("********************MY_STRING.H*****************************\n");
 char p[100] = "Hello ", q[100] = "World";
 mystrcat(p, q);
 printf("String obtained on concatenation: \"%s\"\n", p);
