@@ -1,5 +1,5 @@
 #include "mystring.h"
-
+#include<stdio.h>
 void mystrcat(char str1[], char str2[]) {
    int i, j;
    
