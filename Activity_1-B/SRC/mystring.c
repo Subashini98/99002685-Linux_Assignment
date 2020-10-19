@@ -41,3 +41,12 @@ void mystrcpy(char str1[], char str2[]) // function definition
         str2[i] = str1[i];
         i++;
     }
+ str2[i] =' \0';    
+}
+
+int mystrlen(char str[100]) {
+   int len = 0;
+   while (str[len] != '\0')
+      len++;
+   return (len);
+}
