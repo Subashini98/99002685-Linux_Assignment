@@ -19,4 +19,6 @@ jobs:
   
     - name: make Activity 1
       run:  make -C Activity_1-A
-     
+    
+    - name: make Activity 2
+      run:  make -C Activity_1-B
