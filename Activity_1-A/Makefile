@@ -1,6 +1,15 @@
-target:test.c mstr.c bit_oprtn.c num_oprtn.c
-	gcc test.c mstr.c bit_oprtn.c num_oprtn.c -o all.out
-run:all.out
-	./all.out
+target: all out clean
+all:bitmask.o mystring.o myutils.o test.o
+	gcc bitmask.c mystring.c myutils.c test.c -o all.out
+bitmask.o:
+	gcc -c bitmask.c
+mystring.o:
+	gcc -c mystring.c
+myutils.o:	
+	gcc -c myutils.c
+test.o:
+	gcc -c test.c
 clean:
-	rm all.out
+	rm -rf *.o *.out
+out:
+	./all.out
