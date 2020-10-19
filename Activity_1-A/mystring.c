@@ -1,23 +1,23 @@
 #include "mystring.h"
 
-void mystrcat(char p[], char q[]) {
-   int c, d;
+void mystrcat(char str1[], char str2[]) {
+   int i, j;
    
-   c = 0;
+   i = 0;
  
-   while (p[c] != '\0') {
-      c++;      
+   while (str1[i] != '\0') {
+      i++;      
    }
  
-   d = 0;
+   j = 0;
  
-   while (q[d] != '\0') {
-      p[c] = q[d];
-      d++;
-      c++;    
+   while (str2[j] != '\0') {
+      str1[i] = str2[j];
+      j++;
+      i++;    
    }
  
-   p[c] = '\0';
+   str1[i] = '\0';
 }
 
 void mystrcmp(char str1[100], char str2[100])
@@ -31,25 +31,5 @@ void mystrcmp(char str1[100], char str2[100])
       printf("str1 < str2\n");
    else
       printf("str1 = str2\n");
-}
-
-void mystrcpy(char a[], char b[]) // function definition
-{
-    int i = 0;
-    while(a[i] != '\0')
-    {
-        b[i] = a[i];
-        i++;
-    }
-
-    
-    b[i] =' \0';    
-}
-
-int mystrlen(char str[100]) {
-   int len = 0;
-   while (str[len] != '\0')
-      len++;
-   return (len);
 }
 
